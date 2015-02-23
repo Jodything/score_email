@@ -1,95 +1,127 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-  
 <head>
-  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Score!</title>
-<!--
-  <style>
-    html, body {
-      font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-      -webkit-font-smoothing: antialiased;
-      font-weight: 600;
-      background-color: black;
+  <title>SCORE</title>
+  <style type="text/css">
+
+
+    /*//////// Main Global Elements \\\\\\\\*/
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
     }
-    .container {
-      background-color: black;
-      width: 600px;
-      margin-right: auto;
-      margin-left: auto;
-    }
-    img.background {
-      position: absolute;
-    }
-    .wrapper {
-      width: 500px;
-      margin-right: auto;
-      margin-left: auto;
-      position: relative;
-    }
-    .title-line {
-      display: -webkit-flex;
-      display: flex;
-      -webkit-align-items: center;
-      align-items: center;
-      margin: 1.5em 0;
-    }
-    .title-line p {
-      margin-left: 1em;
-    }
-    
-    h1 {
-      font-size: 36px;
-      color: #FFEF00;
-      line-height: 44px;
-    }
-    p {
-      font-size: 18px;
+    a {
+      text-decoration: none;
       color: white;
-      line-height: 28px;
     }
-    p.gray {
-      color: #8D919E;
+    button {
+      width: 200px;
+      height: 50px;
+      border: 2px solid #FFEF00;
+      font-size: 18px;
+      line-height: 23px;
+      font-weight: 600;
     }
+    button.fill {
+      color: black;
+      background-color: #FFEF00;
+    }
+    button.empty {
+      color: #FFEF00;
+      background-color: transparent;
+    }
+
   </style>
--->
 </head>
-  
-<body style="-webkit-font-smoothing: antialiased; font-weight: 600; background: #000; font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;">
-  <div class="container" style="background-color: #000; width: 600px; margin-right: auto; margin-left: auto;">
-    <img class="background" style="absolute" src="https://gallery.mailchimp.com/fc5cceb2ff567d8c07e555774/images/ac2d7627-11c4-4006-b484-894d8c1efe8c.png
-" alt="football field background">
-    <div class="wrapper" style="width: 500px; margin-right: auto; margin-left: auto; position: relative;">
-      <header>
-        <div class="title-line" style="display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; margin: 1.5em 0;">
-          <img src="https://gallery.mailchimp.com/fc5cceb2ff567d8c07e555774/images/a5d56427-aa61-474a-8e0f-91732f7f0ce3.png
+
+<body>
+<center>
+  <table border="0" cellpadding="0" cellspacing="0" height="100%" width="600" id="body" style="border-collapse: collapse;">
+    <tr>
+      <td>
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" id="container" >
+
+          <tr>
+            <td id="hero-section" style="padding: 1em 1em .5em 1em; background-color: black;">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding-left: 1.5em;">
+                <tr>
+                  <td>
+                    <img style="display: inline-block; vertical-align: middle; margin-top: 1em; margin-bottom: 1em;" src="https://gallery.mailchimp.com/fc5cceb2ff567d8c07e555774/images/a5d56427-aa61-474a-8e0f-91732f7f0ce3.png
 " alt="logo">
-          <p style="margin-left: 1em; color: white; font-size: 18px; line-height: 28px;">Show off your Team Pride</p>
-        </div>
-        <img src="https://gallery.mailchimp.com/fc5cceb2ff567d8c07e555774/images/ccb49df9-df03-453c-a78f-8bccaa8be4ad.png" alt="football celebration">
-      </header>
-      <section>
-        <h1 style="font-size: 36px; color: #ffef00; line-height: 44px;">Lorem ipsum dolor sit amet</h1>
-        <p class="gray" style="color: #8d919e; font-size: 18px; line-height: 28px;">
-          Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
-        </p>
-        <p style="color: #fff; font-size: 18px; line-height: 28px;">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula, quam a dictum ornare, 
-          velit justo malesuada mauris, vel rhoncus leo tellus vel lacus. In dictum lobortis nisl, viverra 
-          commodo arcu ornare ac. Curabitur hendrerit fringilla neque id tristique. Mauris ut tristique dolor, 
-          id semper est. Donec et hendrerit eros, nec egestas massa.
-        </p>
-        <p style="color: #fff; font-size: 18px; line-height: 28px;">
-          Curabitur dictum lectus a purus elementum, a scelerisque purus eleifend. Duis in eros ac felis 
-          molestie convallis at eu libero.
-        </p>
-        <p style="color: #fff; font-size: 18px; line-height: 28px;">Thanks,<br>The Score Team.</p>
-      </section>
-      <footer>
-      </footer>
-    </div><!--wrapper-->
-  </div><!--container-->
-  
+                    <p style="display:inline-block; vertical-align: middle; margin-left: 1em; font-size: 1.125em; font-weight: 600; line-height: 28px; color: white;">Show off your Team Pride</p>
+                  </td>
+                </tr>
+              </table>
+              
+                <img style="margin-left: 1.5em; width: auto; height: auto;" src="https://gallery.mailchimp.com/fc5cceb2ff567d8c07e555774/images/ccb49df9-df03-453c-a78f-8bccaa8be4ad.png" alt="football helmet pat">
+              
+            </td>
+          </tr>
+
+          <tr>
+            <td id="content-section" style="padding: 1em 1em .5em 1em; background-color: black;">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td style="padding-left: 1.5em; padding-right: 1.5em;">
+                    <h1 style="color: #ffef00; font-weight: medium; font-size: 36px;">Lorem ipsum dolor sit amet</h1>
+                    <p style="font-size: 1.125em; font-weight: 600; line-height: 28px; color: #8D919E;">
+                      Neque porro quisquam est qui dolorem ipsum quia dolor sit
+                      amet, consectetur, adipisci velit.
+                    </p>
+                    <p style="font-size: 1.125em; font-weight: 600; line-height: 28px; color: #fff;">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula, quam a dictum ornare,
+                      velit justo malesuada mauris, vel rhoncus leo tellus vel lacus. In dictum lobortis nisl, viverra
+                      commodo arcu ornare ac. Curabitur hendrerit fringilla neque id tristique. Mauris ut tristique
+                      dolor, id semper est. Donec et hendrerit eros, nec egestas massa.
+                    </p>
+                    <p style="font-size: 1.125em; font-weight: 600; line-height: 28px; color: #fff;">
+                      Curabitur dictum lectus a purus elementum, a scelerisque purus eleifend. Duis in eros ac felis
+                      molestie convallis at eu libero.
+                    </p>
+                    <p style="font-size: 1.125em; font-weight: 600; line-height: 28px; color: #fff;">Thanks, <br>The Score Team.</p>
+                    <!-- <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <tr>
+                        <td width="260" valign="top">
+                          <center>
+                            <a href="https://itunes.apple.com/us/app/score!-with-friends/id909739254?mt=8"><button class="fill">Download Score</button></a>
+                          </center>
+                        </td>
+                        <td style="font-size: 0; line-height: 0;" width="20">
+                         &nbsp;
+                        </td>
+                        <td width="260" valign="top">
+                         <center>
+                           <a href="http://scorewithfriends.com/"><button class="empty">Visit Website</button></a>
+                         </center>
+                        </td>
+                      </tr>
+                    </table> -->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td id="footer-section" style="padding: 1em 1em .5em 1em; background-color: black;">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <!-- <td style="padding-left: 1.5em; border-top: 1px solid #C5D4E1;">
+                    <p><span style="color: #8D919E">Don't want to stay updated?</span><a href="#"> Unsubscribe</a></p>
+                  </td> -->
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+
+</center>
 </body>
 </html>
